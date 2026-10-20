@@ -11,78 +11,35 @@ Coursework and project workspace for **2103610 — Introduction to Cyber Physica
 - **Course page:** 2026/1, Section 1
 - **Source:** [myCourseVille syllabus](https://www.mycourseville.com/?q=courseville/course/86695/syllabus) (login required)
 
-> The course page is labeled 2026/1, but the syllabus title and academic-year field still refer to 2025/1. The syllabus was last changed on 12 August 2026. This summary follows the displayed syllabus; check myCourseVille announcements for current requirements.
+## Current project
 
-## Overview
+**Project 2 — Traffic Light Controller** implements a three-mode traffic light using Simulink, Stateflow, and Arduino hardware.
 
-The course covers modeling, design, and analysis of cyber-physical systems, including synchronous and asynchronous models, safety and liveness requirements, symbolic search, controllers, timed automata, and real-time scheduling.
+- Normal: Green 5 s → Yellow 2 s → Red 5 s
+- Emergency: Red 1 s → Yellow 1 s
+- Maintenance: All LEDs on 1 s → All LEDs off 1 s
 
-## Learning outcomes
-
-- Understand and critically examine CPS concepts and fundamentals.
-- Explain real-world CPS applications, design methods, and current limitations.
-- Compare data communication protocols and identify their advantages and disadvantages.
-
-## Topic outline
-
-The syllabus lists the following sessions without specific dates or times. Chapter references are given as Lee & Seshia in the syllabus.
-
-| Session | Topics | Reading |
-| --- | --- | --- |
-| 1 | Introduction | Ch. 1 |
-| 2 | Model-based design and continuous dynamics | Ch. 2 |
-| 3 | Sensors and actuators | Ch. 7 |
-| 4 | Memory architecture | Ch. 9 |
-| 5 | Discrete dynamics, extended state machines, hybrid systems, and timed automata | Ch. 3–4 |
-| 6 | Composition of state machines; input/output | Ch. 5, 10 |
-| — | Midterm week — no class | — |
-| 7 | Midterm exam; hierarchical state machines | Ch. 5 |
-| 8 | Multitasking, operating systems, and scheduling | Ch. 11–12 |
-| 9 | Scheduling anomalies and temporal logic | Ch. 12–13 |
-| 10 | Introduction to UPPAAL | Course notes |
-| 11 | Reachability analysis and model checking | Ch. 15 |
-| 12 | Networking and communication | Course notes |
-| 13 | Advanced transistor technology | Course notes |
-| 14 | Introduction to machine learning and convolutional neural networks | Course notes |
-
-## Assessment
-
-| Component | Weight |
-| --- | ---: |
-| Homework | 20% |
-| Midterm | 25% |
-| Final | 25% |
-| Projects | 30% |
-| **Total** | **100%** |
-
-The displayed syllabus uses criterion-referenced letter grades:
-
-| Grade | Minimum score |
-| --- | ---: |
-| A | 80 |
-| B+ | 75 |
-| B | 70 |
-| C+ | 65 |
-| C | 60 |
-| D+ | 55 |
-| D | 50 |
-| F | Below 50 |
+See [project2/README.md](project2/README.md) for the architecture, hardware wiring, Simulink setup, test plan, and submission checklist.
 
 ## Repository structure
 
 ```text
 intro-to-cps/
 ├── readme.md
-└── project/
-    └── .gitkeep
+└── project2/
+    ├── README.md
+    ├── model/
+    ├── screenshots/
+    ├── hardware/
+    ├── report/
+    └── demo/
 ```
-
-The `project/` directory is a blank starting point for course project work. No programming language, framework, dependencies, or build commands have been configured yet.
 
 ## Getting started
 
-1. Clone this repository.
-2. Add project files under `project/`.
-3. Document setup, dependencies, and run instructions as the project develops.
+1. Install **Simulink Support Package for Arduino Hardware**.
+2. Open [project2/README.md](project2/README.md).
+3. Add the completed Simulink model under `project2/model/`.
+4. Add screenshots, hardware evidence, report, and demonstration materials to their matching folders.
 
-This repository is a personal coursework workspace. Official course instructions and updates are available on myCourseVille.
+Official requirements and updates remain available on myCourseVille.
